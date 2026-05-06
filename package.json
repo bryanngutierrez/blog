@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predploy": "npm run build",
+    "deploy": "gh pages -d -dist",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
