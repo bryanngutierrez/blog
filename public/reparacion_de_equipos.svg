@@ -1,0 +1,65 @@
+<svg width="900" height="500" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"></stop>
+      <stop offset="100%" stop-color="#1e293b"></stop>
+    </linearGradient>
+
+    <style>
+      .blink {
+        animation: blink 1.2s infinite;
+      }
+
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+
+      .flow {
+        stroke-dasharray: 6;
+        animation: flow 1.5s linear infinite;
+      }
+
+      @keyframes flow {
+        to { stroke-dashoffset: -20; }
+      }
+    </style>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="900" height="500" fill="url(#bg)"></rect>
+
+  <!-- ICONO AGRANDADO -->
+  <g transform="translate(120,100) scale(1.6)">
+
+    <!-- circuito -->
+    <line x1="80" y1="80" x2="80" y2="20" stroke="#22C55E" stroke-width="3" class="flow"></line>
+    <line x1="80" y1="80" x2="140" y2="40" stroke="#22C55E" stroke-width="3" class="flow"></line>
+    <line x1="80" y1="80" x2="140" y2="120" stroke="#22C55E" stroke-width="3" class="flow"></line>
+    <line x1="80" y1="80" x2="80" y2="140" stroke="#22C55E" stroke-width="3" class="flow"></line>
+    <line x1="80" y1="80" x2="20" y2="120" stroke="#22C55E" stroke-width="3" class="flow"></line>
+    <line x1="80" y1="80" x2="20" y2="40" stroke="#22C55E" stroke-width="3" class="flow"></line>
+
+    <!-- nodo -->
+    <circle cx="80" cy="80" r="7" fill="#22C55E"></circle>
+
+    <!-- rayo -->
+    <polygon class="blink" points="75,50 90,50 80,80 95,80 65,120 75,90 60,90" fill="#FFD60A"></polygon>
+
+  </g>
+
+  <!-- TEXTO -->
+  <text x="420" y="220" font-size="48" font-family="Arial Black" fill="white">
+    Reparación de Equipos
+  </text>
+
+  <text x="420" y="280" font-size="48" font-family="Arial Black" fill="#22C55E">
+    Electrónicos
+  </text>
+
+  <text x="420" y="340" font-size="22" fill="#cbd5e1">
+    Diagnóstico • Mantenimiento • Soluciones confiables
+  </text>
+
+</svg>
