@@ -1,6 +1,6 @@
 "use client";
 
-const prefix = process.env.NODE_ENV === 'production' ? '/cv' : '';
+const isProduction = process.env.NODE_ENV === "production";
 
 import { useEffect, useState } from "react";
 
@@ -40,7 +40,7 @@ export default function ImageSlider() {
           {/* VIDEO */}
           <video
             key={videos[index]}
-            src={prefix + videos[index]}
+            src={isProduction ? '/cv' + videos[index] : videos[index]}
             autoPlay
             loop
             muted

@@ -14,7 +14,8 @@ export default function Navbar() {
     { name: "Services", href: "/services" },
     { name: "About", href: "/about" },    
   ];
-
+  const isProduction = process.env.NODE_ENV === 'production'
+ 
   return (
     <div>
       <nav className="block w-full max-w-screen  mx-auto bg-green-100 bg-opacity-200 sticky top-3 shadow lg:px-8 backdrop-blur-lg backdrop-saturate-150 z-9999">
@@ -24,7 +25,7 @@ export default function Navbar() {
             className="mr-1 block cursor-pointer  text-green-600 font-bold text-2xl"
           >
              <img
-                  src="/logo_BGSolve.svg"
+                  src={isProduction ? '/cv/logo_BGSolve.svg' : '/logo_BGSolve.svg'}
                   alt="BGSolve"
                   className="w-40 h-15 object-contain"
                   />
