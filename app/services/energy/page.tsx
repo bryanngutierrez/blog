@@ -20,7 +20,7 @@ export default function Projects() {
   ];
 
   const phone = "573102159370"; // 👈 cambia por tu número real
-
+  const prefix = process.env.NODE_ENV === 'production' ? '/cv' : '';
   return (
     <section className="py-20 bg-gray-100 text-white">
       
@@ -44,7 +44,7 @@ export default function Projects() {
             
             {/* Imagen */}
             <img
-              src={project.image}
+              src={prefix + project.image}
               alt={project.title}
               className="w-full h-48 object-cover"
             />
