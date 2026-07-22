@@ -6,9 +6,9 @@ import { useEffect, useState } from "react";
 
 export default function ImageSlider() {
   const videos = [
-    "/repair.mp4",
-    "/iluminacion_bar.mp4",
-    "/pantalla_pixel.mp4",
+    "./repair.mp4",
+    "./iluminacion_bar.mp4",
+    "./pantalla_pixel.mp4",
     
   ];
 
