@@ -4,19 +4,19 @@ export default function Projects() {
       title: "Sistemas de Alarma",
       description:
         "Sistema alarma para cualquier lugar con deteccion de movimientos.",
-      image: "/alarma.jpg",
+      image: "./alarma.jpg",
     },
     {
       title: "Sistema de CCTV para Video vigilancia",
       description:
         "Sistema de CCTV para video vigilancia con grabacion en la nube y acceso remoto.",
-      image: "/cctv.jpg",
+      image: "./cctv.jpg",
     },
     {
       title: "Sistemas Embebidos e IoT",
       description:
         "Sistemas embebidos e Internet of Things (IoT) para aplicaciones de automatización y control.",
-      image: "/iot.jpg",
+      image: "./iot.jpg",
     },
   ];
 
@@ -44,7 +44,7 @@ export default function Projects() {
             
             {/* Imagen */}
             <img
-              src={isProduction ? '/cv' + project.image : project.image}
+              src={isProduction ? './blog' + project.image : project.image}
               alt={project.title}
               className="w-full h-48 object-cover"
             />

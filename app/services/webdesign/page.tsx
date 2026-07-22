@@ -4,19 +4,19 @@ export default function Projects() {
       title: "Sistema POS",
       description:
         "Sistema de punto de venta para gestión de ventas y control de inventario.",
-      image: "/posjpg.png",
+      image: "./posjpg.png",
     },
     {
       title: "Reconocimiento facial para seguridad",
       description:
         "Aplicacion de reconocimiento facial para mejorar la seguridad en porterias y control de asistencia en empresas.",
-      image: "/face_recgnition.jpg",
+      image: "./face_recgnition.jpg",
     },
     {
       title: "Tienda en línea y marketing digital",
       description:
         "Diseño e implementación de tienda en línea para exteder los nichos llegar a muchos mas clientes.",
-      image: "/tienda.jpg",
+      image: "./tienda.jpg",
     },
   ];
 
@@ -45,7 +45,7 @@ export default function Projects() {
             
             {/* Imagen */}
             <img
-              src={isProduction ? '/cv' + project.image : project.image}
+              src={isProduction ? './blog' + project.image : project.image}
               alt={project.title}
               className="w-full h-48 object-cover"
             />

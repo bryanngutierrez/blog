@@ -4,18 +4,18 @@ export default function Projects() {
       title: "Reparacion de equipos electronicos",
       description:
         "Reparación de equipos electrónicos, incluyendo computadoras, laptops, tablets y smartphones.",
-      image: "/repair.jpg",
+      image: "./repair.jpg",
     },
     {
       title: " Instalaciones electricas",
       description:
         "Instalaciones eléctricas para viviendas y edificios.",
-      image: "/inst_elect.jpg",
+      image: "./inst_elect.jpg",
     },
     {
       title: "Mantenimiento y Reparacion de equipos electromecanicos",
       description:"reparacioon de equipos de construccion, mantenimiento preventivo y correctivo de pulidoras motores, cierras, entre otros.",
-      image: "/elec_mec.jpg",
+      image: "./elec_mec.jpg",
     },
   ];
 
@@ -44,7 +44,7 @@ export default function Projects() {
             
             {/* Imagen */}
             <img
-              src={isProduction ? '/cv' + project.image : project.image}
+              src={isProduction ? './blog' + project.image : project.image}
               alt={project.title}
               className="w-full h-48 object-cover"
             />
