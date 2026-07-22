@@ -25,7 +25,7 @@ export default function Navbar() {
             className="mr-1 block cursor-pointer  text-green-600 font-bold text-2xl"
           >
              <img
-                  src={isProduction ? '/blog/logo_BGSolve.svg' : './logo_BGSolve.svg'}
+                  src={isProduction ? '/blog/logo_BGSolve.svg' : '/logo_BGSolve.svg'}
                   alt="BGSolve"
                   className="w-40 h-15 object-contain"
                   />
