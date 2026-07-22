@@ -40,7 +40,7 @@ export default function ImageSlider() {
           {/* VIDEO */}
           <video
             key={videos[index]}
-            src={isProduction ? '/cv' + videos[index] : videos[index]}
+            src={isProduction ? '/blog' + videos[index] : videos[index]}
             autoPlay
             loop
             muted
