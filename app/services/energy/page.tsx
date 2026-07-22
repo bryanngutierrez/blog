@@ -4,18 +4,18 @@ export default function Projects() {
       title: "Sistema Solar Residencial",
       description:
         "Instalación de sistema fotovoltaico para vivienda con capacidad de hasta 15kW",
-      image: "./solar.jpg",
+      image: "/solar.jpg",
     },
     {
       title: "sistema de video vigilancia con paneles solares",
       description:
         "Sistema de video vigilancia autonomo bajo requerimientos del cliente.",
-      image: "./security.jpg",
+      image: "/security.jpg",
     },
     {
       title: "cercas electricas alimentadas con paneles solares",
       description:"cercas electricas alimentadas con paneles solares para zonas rurales",
-      image: "./cerca.jpg",
+      image: "/cerca.jpg",
     },
   ];
 
@@ -44,7 +44,7 @@ export default function Projects() {
             
             {/* Imagen */}
             <img
-              src={isProduction ? './blog' + project.image : project.image}
+              src={isProduction ? '/blog' + project.image : project.image}
               alt={project.title}
               className="w-full h-48 object-cover"
             />
