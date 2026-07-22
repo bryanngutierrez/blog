@@ -16,18 +16,18 @@ const Footer: React.FC = () => {
         <div>
           <h3 className="font-semibold text-lg mb-4">Services</h3>
           <ul className="space-y-2 text-gray-900 text-sm">
-            <li><a href="/services/webdesign" className="hover:text-white transition">Diseño de software</a></li>
-            <li><a href="/services/energy" className="hover:text-white transition">Diseños solares</a></li>
-            <li><a href="/services/repair" className="hover:text-white transition">Reparacion de equipos</a></li>
-            <li><a href="/services/segurity" className="hover:text-white transition">Seguridad y Domotica</a></li>
-            <li><a href="/services/iluminationandsound" className="hover:text-white transition">Iluminacion y sonido</a></li>
+            <li><a href="./services/webdesign" className="hover:text-white transition">Diseño de software</a></li>
+            <li><a href="./services/energy" className="hover:text-white transition">Diseños solares</a></li>
+            <li><a href="./services/repair" className="hover:text-white transition">Reparacion de equipos</a></li>
+            <li><a href="./services/segurity" className="hover:text-white transition">Seguridad y Domotica</a></li>
+            <li><a href="./services/iluminationandsound" className="hover:text-white transition">Iluminacion y sonido</a></li>
           </ul>
         </div>
 
         <div>
           <h3 className="font-semibold text-lg mb-4">Company</h3>
           <ul className="space-y-2 text-gray-900 text-sm">
-            <li><a href="/about" className="hover:text-white transition">About Us</a></li>
+            <li><a href="./about" className="hover:text-white transition">About Us</a></li>
           </ul>
         </div>
 

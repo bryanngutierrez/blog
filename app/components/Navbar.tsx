@@ -67,7 +67,7 @@ export default function Navbar() {
                className="mr-4 flex items-center gap-2 cursor-pointer py-1.5"
               >
               <img
-                  src="/logo_BGSolve.svg"
+                 src={isProduction ? '/blog/logo_BGSolve.svg' : '/logo_BGSolve.svg'}
                   alt="BGSolve"
                   className="w-20 h-20 object-contain"
                   />
